@@ -1,9 +1,9 @@
 var express = require('express');
 const blankPageModel = require('../models/blankPage.model')
-const getBlankPage = (req, res) => {
-     let result = blankPageModel.blankPageModel()
+const getBlankPage = async (req, res) => {
+     let result = await blankPageModel.blankPageModel()
      console.log(result);
      // res.send('Hello Expressjs and router and get controller getBlankPage');
-     res.send(result.data);
+     res.send(result);
 };
 module.exports = { getBlankPage };
