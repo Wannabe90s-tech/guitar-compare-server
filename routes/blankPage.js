@@ -3,6 +3,6 @@ var router = express.Router();
 var controller = require('../controllers/blankPage.controller');
 router.get('/blankPage', controller.getBlankPage )
 router.get('/blankPage/io', (req , res) => {
-    res.send('supachai')
+    res.send('supachai01')
 })
 module.exports = router;
