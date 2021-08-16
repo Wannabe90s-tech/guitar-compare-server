@@ -6,6 +6,6 @@ router.get('/blankPage', async (req ,res)=> {
     res.send(result)
 } )
 router.get('/blankPage/io', (req , res) => {
-    res.send('supachai01')
+    res.send('supachai0101test')
 })
 module.exports = router;
